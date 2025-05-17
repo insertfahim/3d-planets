@@ -1,0 +1,71 @@
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Orbitron:wght@400..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: "Manrope", sans-serif; */
+/* font-family: "Orbitron", sans-serif;  */
+
+:root {
+  --dark-bg: #0a1824;
+  --dark: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  height: 100%;
+  user-select: none;
+  font-family: "Manrope", sans-serif;
+}
+
+/* components */
+@layer components {
+  .sub-text {
+    @apply font-manrope text-secondary;
+  }
+  /* kebab-case - stick to the kebab-case */
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .detail-sub-text {
+    @apply sub-text text-lg w-full text-center text-primary md:text-start md:w-[50vw];
+  }
+  .info-sub-text {
+    @apply tracking-widest text-secondary text-lg uppercase;
+  }
+  .nav-text {
+    @apply sub-text cursor-pointer transition-all;
+  }
+  .nav-hover-text-isBack {
+    @apply text-primary hover:text-secondary;
+  }
+  .nav-hover-text-notBack {
+    @apply text-secondary hover:text-primary;
+  }
+  .info-text {
+    @apply w-52 h-full flex-center flex-col gap-1;
+  }
+  .info-number {
+    @apply font-orbiton text-3xl font-bold;
+  }
+  .arrow {
+    @apply absolute right-5 md:right-16 top-16 cursor-pointer z-10 hover:border border-[#e0fbfc50] rounded-full transition-all;
+  }
+  .earth-title {
+    @apply font-orbiton text-8xl font-bold;
+  }
+  .underline-div-div {
+    @apply w-28 h-2 rounded-lg bg-skyBlue;
+  }
+}
