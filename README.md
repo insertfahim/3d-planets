@@ -26,7 +26,6 @@ This project is a 3D interactive planetary experience built with React, Three.js
 -   Routing for different planet views using React Router.
 -   Responsive design for various screen sizes.
 -   Optimized asset loading and performance.
--   [Add any other key features of your project]
 
 ## Tech Stack
 
